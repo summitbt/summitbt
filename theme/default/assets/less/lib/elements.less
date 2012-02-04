@@ -1,0 +1,193 @@
+img {
+	border: none 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: @margin-bottom;
+	font-weight: bold;
+	text-align: left;
+}
+
+h1 {
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 0);
+}
+
+h2 {
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 1);
+}
+
+h3 {
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 2);
+}
+
+h4 {
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 3);
+}
+h5
+{
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 4);
+}
+
+h6 {
+	font-size: @heading-h1-font-size - (@heading-font-size-reduce * 5);
+}
+
+p {
+	margin-bottom: @margin-bottom;
+}
+
+sub, sup {
+	font-size: @font-size-small;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: -0.5em;
+}
+
+sub {
+	top: -0.25em;
+}
+
+dl {
+	margin: 0 0 @margin-bottom 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: @margin-bottom / 2;
+}
+
+ul, ol {
+	margin: 0 0 @margin-bottom @margin-bottom;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: upper-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid @black;
+	margin-bottom: @margin-bottom;
+	padding: 0;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+big {
+	font-size: @font-size-big;
+}
+
+small {
+	font-size: @font-size-small;
+}
+
+cite, em, i {
+	font-style: italic;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	content: "";
+	content: none;
+}
+
+q,
+blockquote {
+	font-family: Georgia, "Bitstream Charter", serif;
+	font-style: italic;
+	font-weight: normal;
+	margin: 20px;
+	quotes: none;
+}
+
+q em,
+q i, q cite,
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+
+q cite,
+blockquote cite {
+	color: @gray-medium;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+pre, code, kbd, samp {
+	background: #f4f4f4;
+	font: @font-size Courier, monospace;
+	line-height: @line-height;
+	margin-bottom: @margin-bottom;
+	overflow: auto;
+	padding: 10px;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+abbr,
+acronym,
+dfn {
+	border-bottom: 1px dotted #666666;
+	cursor: help;
+}
+
+address {
+	display: block;
+	font-style: normal;
+}
+
+ins {
+	background-color: lighten(@yellow, 40%);
+	text-decoration: none;
+}
+
+figure {
+	margin: 0;
+}

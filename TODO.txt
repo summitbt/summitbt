@@ -1,0 +1,97 @@
+logout
+-----
+logout
+
+
+dashboard
+-----
+dashboard
+dashboard/ajax (add/remove/collapse widget)
+
+
+about
+-----
+about
+
+
+projects
+-----
+projects
+	projects/ajax (filters)
+projects/create
+
+
+project
+-----
+project (404)
+project/create
+project/XXX
+	XXX
+	XXX/summary
+	XXX/issues
+	XXX/roadmap
+	XXX/changelog
+	XXX/popular
+	XXX/versions
+	XXX/settings
+	XXX/versions
+	XXX/components
+
+
+issues
+-----
+issues
+issues/ajax (filters)
+
+
+issue
+-----
+issue (404)
+issue/create
+issue/XXX-YYY
+	XXX-YYY
+	XXX-YYY/ajax/comments
+	XXX-YYY/ajax/worklog
+	XXX-YYY/ajax/history
+	XXX-YYY/ajax/activity
+	XXX-YYY/ajax/all
+	XXX-YYY/ajax/attach
+	XXX-YYY/ajax/vote
+	XXX-YYY/ajax/voters
+	XXX-YYY/ajax/watch
+	XXX-YYY/ajax/watchers
+
+
+search
+-----
+search
+search/results
+	search/results?q=XYZ
+	search/results/(encoded=XYZ)/page/Z
+
+
+profile
+-----
+profile
+profile/preferences
+
+
+administration
+-----
+administration
+administration/emails
+administration/resolutions
+administration/priorities
+administration/types
+administration/statuses
+administration/modules
+administration/users
+administration/links
+
+
+
+
+HighCharts Non-commercial redistribution
+You are allowed to distribute a highsoft software product with non-commercial packages given that you fulfill two conditions:
+	- Emphasize to your users that a highsoft software product is not free for commercial use. You can do this on your download page or when your users activate a highsoft software product in your application.
+	- Provide a link back to this web page in the same location.

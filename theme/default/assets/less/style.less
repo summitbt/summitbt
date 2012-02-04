@@ -1,0 +1,134 @@
+/*!
+ * Summit Default Theme v1.0
+ *
+ * Copyright 2012 Summit
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+// Variables file ===========================================================================
+@import "lib/variables.less";
+// ==========================================================================================
+
+
+// Bootstrap file ===========================================================================
+@import "lib/bootstrap.less";
+// ==========================================================================================
+
+
+// Reset ====================================================================================
+@import "lib/reset.less";
+// ==========================================================================================
+
+
+/* GLOBALS
+----------------------------------------------------------*/
+:focus {
+	outline: none 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: @background-color;
+	font-size: @font-size;
+	font-family: @font-family;
+	color: @font-color;
+	line-height: @line-height;
+}
+
+::-moz-selection,
+::selection {
+	background: @selection-background;
+	color: @selection-color;
+	text-shadow: @selection-text-shadow;
+}
+
+img::selection,
+img::-moz-selection	{
+	background: transparent;
+}
+
+a {
+	color: @link-text-color;
+	text-decoration: @link-text-decoration;
+
+		&:hover, &:active {
+			color: @link-text-hover-color;
+			text-decoration: @link-text-hover-decoration;
+		}
+
+		&:hover { }
+
+		&:active { }
+}
+
+
+/* ELEMENTS
+----------------------------------------------------------*/
+@import "general/elements.less";
+
+
+/* FORMS
+----------------------------------------------------------*/
+@import "general/forms.less";
+
+
+/* BUTTONS
+----------------------------------------------------------*/
+@import "general/buttons.less";
+
+
+/* TABLES
+----------------------------------------------------------*/
+@import "general/tables.less";
+
+
+/* HEADER
+----------------------------------------------------------*/
+@import "sections/header.less";
+
+
+/* NAVIGATION
+----------------------------------------------------------*/
+@import "sections/navigation.less";
+
+
+/* BREADCRUMBS
+----------------------------------------------------------*/
+@import "sections/breadcrumbs.less";
+
+
+/* CONTENT
+----------------------------------------------------------*/
+@import "sections/content.less";
+
+
+/* FOOTER
+----------------------------------------------------------*/
+@import "sections/footer.less";
+
+
+/* PAGINATION
+----------------------------------------------------------*/
+@import "sections/pagination.less";
+
+
+/* MESSAGES
+----------------------------------------------------------*/
+@import "sections/messages.less";
+
+
+/* SHARED
+----------------------------------------------------------*/
+@import "general/shared.less";
+
+
+/* CLEAR
+----------------------------------------------------------*/
+.clear {
+	.clearfix();
+}

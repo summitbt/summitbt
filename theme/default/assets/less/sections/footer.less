@@ -1,0 +1,44 @@
+#footer {
+	background-color: #F6F5F5;
+	border-top: 1px solid #E6E6E6;
+
+		.footer {
+			padding: 10px;
+			overflow: hidden;
+
+				.menu-wrapper {
+					float: left;
+
+						ul {
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							overflow: hidden;
+
+								ul {
+									display: none;
+								}
+						}
+
+						li {
+							float: left;
+							border-left: 1px solid #E6E6E6;
+
+								&:first-child {
+									border-left: none;
+								}
+						}
+
+						a {
+							padding: 5px;
+						}
+				}
+
+				.footnote {
+					float: right;
+					font-size: @font-size-small;
+
+						.summit { }
+				}
+		}
+}

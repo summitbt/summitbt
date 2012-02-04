@@ -1,0 +1,134 @@
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+button,
+.button {
+	margin: 0;
+	white-space: nowrap;
+	overflow: visible;
+	outline: none;
+	*vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+	.inline-block();
+	padding: @button-padding;
+	font-family: @font-family;
+	font-size: @font-size;
+	color: @button-text-color;
+	text-decoration: none;
+	border: 1px solid @button-border-color;
+	.border-radius(@button-radius);
+	#gradient > .vertical (@button-background-start, @button-background-end);
+
+		&:hover, &:active {
+			z-index: 1;
+			color: @button-hover-text-color;
+			border-color: @button-hover-border-color;
+			text-decoration: none;
+			.box-shadow(@button-hover-shadow);
+			#gradient > .vertical (@button-hover-background-start, @button-hover-background-end);
+		}
+
+		&:hover { }
+
+		&:active { }
+
+		span {
+			span { }
+		}
+
+		&.disabled {
+			cursor: default;
+			color: @button-disabled-text-color;
+			border: 1px solid @button-disabled-border-color;
+			#gradient > .vertical (@button-disabled-background-start, @button-disabled-background-end);
+
+				&:hover, &:active {
+					color: @button-disabled-hover-text-color;
+					border-color: @button-disabled-hover-border-color;
+					#gradient > .vertical (@button-disabled-hover-background-start, @button-disabled-hover-background-end);
+				}
+		}
+
+		&.positive {
+		    &:hover, &:active {
+				color: @button-positive-hover-text-color;
+				border-color: @button-positive-hover-border-color;
+				#gradient > .vertical (@button-positive-hover-background-start, @button-positive-hover-background-end);
+			}
+		}
+
+		&.negative {
+		    &:hover, &:active {
+				color: @button-negative-hover-text-color;
+				border-color: @button-negative-hover-border-color;
+				#gradient > .vertical (@button-negative-hover-background-start, @button-negative-hover-background-end);
+			}
+		}
+
+		&+ input[type="reset"],
+		&+ input[type="submit"],
+		&+ input[type="button"],
+		&+ button,
+		&+ .button,
+		&+ .button-group {
+			margin-left: 5px;
+		}
+}
+
+.button-group {
+	list-style: none;
+	.inline-block();
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+
+		li {
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+
+		input[type="reset"],
+		input[type="submit"],
+		button,
+		.button {
+			float: left;
+		}
+
+		input[type="reset"],
+		input[type="submit"],
+		input[type="button"],
+		button,
+		.button {
+		    .border-radius(0);
+
+				&+ input[type="reset"],
+	            &+ input[type="submit"],
+	            &+ input[type="button"],
+	            &+ button,
+	            &+ .button {
+	                margin-left: -1px;
+	            }
+		}
+
+		&+ input[type="reset"],
+		&+ input[type="submit"],
+		&+ input[type="button"],
+		&+ button,
+		&+ .button,
+		&+ .button-group {
+	        margin-left: 5px;
+	    }
+
+		> .button:first-child,
+		li:first-child .button {
+			margin-left: 0;
+			.border-radius-left(@button-radius);
+		}
+
+		> .button:last-child,
+		li:last-child > .button {
+			.border-radius-right(@button-radius);
+		}
+}

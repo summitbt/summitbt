@@ -1,0 +1,183 @@
+form {
+	margin: 0;
+
+		.field-wrapper {
+			margin-top: 8px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+		}
+
+		.actions {
+			margin-top: 8px;
+			text-align: right;
+		}
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+
+		fieldset {
+			border: solid 1px @gray-light;
+			.border-radius(5px);
+			padding: 10px;
+
+				legend {
+					display: inline;
+					margin-left: 10px;
+					padding: 5px;
+					color: @gray-medium;
+					font-weight: bold;
+				}
+		}
+}
+
+legend {
+	display: none;
+}
+
+label {
+	display: block;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 3px;
+
+		.required {
+			color: @red;
+			padding-left: 5px;
+		}
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select,
+button {
+	font-size: @font-size;
+	font-family: @font-family;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	color: @font-color;
+	padding: @form-element-padding;
+	.border-radius(@form-element-radius);
+
+}
+
+button,
+input {
+	line-height: normal;
+	*overflow: visible;
+}
+
+table button,
+table input {
+	*overflow: auto;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	display: inline;
+	width: auto;
+	/*vertical-align: top;*/
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0; padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+	.min-height(100px);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="search"],
+select,
+textarea {
+	background: @white;
+	border: 1px solid @form-element-border-color;
+
+		&:hover {
+			border-color: @form-element-hover-border-color;
+		}
+
+		&:focus {
+			border-color: @form-element-active-border-color;
+			.box-shadow(0 0 4px @primary-medium);
+		}
+}
+
+input[type="file"] {
+	border: none;
+}
+
+input,
+textarea,
+select {
+	&[readonly="readonly"] {
+		color: @gray-medium;
+		border-color: @form-element-border-color;
+	}
+}
+
+select { }
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin-right: 3px;
+}
+
+.field-type-checkboxes,
+.field-type-radios {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+
+			li { }
+	}
+}
+
+/* field validation error */
+input[type="text"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+	&.field-validation-error {
+		border: 1px solid @red;
+	}
+}

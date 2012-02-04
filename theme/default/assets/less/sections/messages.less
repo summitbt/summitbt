@@ -1,0 +1,54 @@
+ul.messages {
+	margin: 0 0 15px;
+	padding: 0 0 0 40px;
+	list-style: none;
+	border: 1px solid;
+	background-repeat: no-repeat;
+    background-position: 5px;
+
+		&.type-success {
+			color: @green;
+			background-color: lighten(@green, 50%);
+			background-image:url(../images/success.png);
+			border-color: @green;
+		}
+
+		&.type-error,
+		&.type-validation {
+			color: @red;
+			background-color: lighten(@red, 30%);
+			background-image: url(../images/error.png);
+			border-color: @red;
+		}
+
+		&.type-info {
+			color: @blue;
+			background-color: lighten(@blue, 30%);
+			background-image: url(../images/info.png);
+			border-color: @blue;
+		}
+
+		&.type-warning {
+			color: @orange;
+			background-color: lighten(@orange, 30%);
+			background-image: url(../images/warning.png);
+			border-color: @orange;
+		}
+
+		li {
+			padding: 0 8px 8px 0;
+
+				&:first-child {
+					padding-top: 8px;
+				}
+
+				&.msg-success { }
+
+				&.msg-error,
+				&.msg-validation { }
+
+				&.msg-info { }
+
+				&.msg-warning { }
+		}
+}

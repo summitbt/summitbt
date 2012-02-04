@@ -1,0 +1,133 @@
+// Colors
+@white: #ffffff;
+@black: #000000;
+@blue: #0000ff;
+@green: #339900;
+@red: #FF0000;
+@yellow: #ffff00;
+@orange: #ff9900;
+@pink: #ff6666;
+@purple: #9900ff;
+@brown: #996600;
+@aqua: #00ffff;
+
+
+
+// Grays
+@gray-darkest: lighten(@black, 10%);
+@gray-dark: lighten(@black, 25%);
+@gray: lighten(@black, 50%);
+@gray-medium: @gray;
+@gray-light: lighten(@black, 75%);
+@gray-lightest: lighten(@black, 90%);
+
+
+// Primary color pallette
+@primary-lightest: lighten(@primary-medium, 25%);
+@primary-light: lighten(@primary-medium, 10%);
+@primary-medium: #93B876;
+@primary-dark: darken(@primary-medium, 10%);
+@primary-darkest: darken(@primary-medium, 25%);
+
+
+// Secondary color pallette
+@secondary-lightest: lighten(@secondary-medium, 40%);
+@secondary-light: lighten(@secondary-medium, 25%);
+@secondary-medium: #AE855C;
+@secondary-dark: darken(@secondary-medium, 25%);
+@secondary-darkest: darken(@secondary-medium, 40%);
+
+
+// Background
+@background-color: @white;
+
+
+// Text
+@font-color: #444444;
+@font-size: 14px;
+@font-size-small: @font-size - 2px;
+@font-size-big: @font-size + 2px;
+@font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+
+
+// Links
+@link-text-color: @primary-medium;
+@link-text-decoration: none;
+@link-text-hover-color: @primary-dark;
+@link-text-hover-decoration: underline;
+
+
+// Selection
+@selection-background: @primary-lightest;
+@selection-color: @primary-darkest;
+@selection-text-shadow: none;
+
+
+// Margin-bottom
+@margin-bottom: 18px;
+
+
+// line-height
+@line-height: 1.5;
+
+
+// Heading
+@heading-h1-font-size: 24px;
+@heading-font-size-reduce: 2px;
+
+
+// Form elements
+@form-element-padding: 3px;
+@form-element-radius: 4px;
+@form-element-border-color: @gray-medium;
+@form-element-hover-border-color: @gray-dark;
+@form-element-active-border-color: @gray-darkest;
+@form-element-hover-shadow: 0 1px 3px rgba(99, 99, 99, .3);
+
+
+// Buttons
+@button-background-start: @gray-lightest;
+@button-background-end: @gray-light;
+@button-text-color: @black;
+@button-text-shadow: fadeout(@white, 80%);
+@button-border-color:@gray-medium;
+@button-radius: 3px;
+@button-padding: 3px 8px;
+
+@button-hover-background-start: @primary-light;
+@button-hover-background-end: @primary-dark;
+@button-hover-text-color: @white;
+@button-hover-text-shadow: @button-text-shadow;
+@button-hover-border-color: @gray-dark;
+@button-hover-shadow: 0 1px 3px rgba(99, 99, 99, .3);
+
+@button-active-background-start: @button-hover-background-end;
+@button-active-background-end: @button-hover-background-start;
+
+@button-disabled-background-start: @gray-light;
+@button-disabled-background-end: @gray-medium;
+@button-disabled-text-color: @gray-dark;
+@button-disabled-border-color: @gray-dark;
+
+@button-disabled-hover-background-start: @button-disabled-background-start;
+@button-disabled-hover-background-end: @button-disabled-background-end;
+@button-disabled-hover-text-color: @button-disabled-text-color;
+@button-disabled-hover-border-color: @button-disabled-border-color;
+
+@button-positive-hover-background-start: #92Eb87;
+@button-positive-hover-background-end: #45BF55;
+@button-positive-hover-text-color: @white;
+@button-positive-hover-border-color: #45BF55;
+
+@button-negative-hover-background-start: #DC5F59;
+@button-negative-hover-background-end: #B33630;
+@button-negative-hover-text-color: @white;
+@button-negative-hover-border-color: #A0302A;
+
+
+// Layout
+@grid-columns: 16;
+@grid-column-width: 40px;
+@grid-gutter-width: 10px;
+@extra-space: (@grid-gutter-width * 2); // For our grid calculations
+@site-width: (@grid-columns * @grid-column-width) + (@grid-gutter-width * (@grid-columns - 1));
